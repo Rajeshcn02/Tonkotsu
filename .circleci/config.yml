@@ -19,7 +19,7 @@ jobs:
       enabled: true
     working_directory: ~/repo
     environment:
-      HEROKU_APP: tnkotsu-vishwasnm2-staging
+      HEROKU_APP: tonktsu-staging
     steps:
       - checkout
       - run:
@@ -32,7 +32,4 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-          filters:
-            branches:
-              ignore: master
       - deploy
