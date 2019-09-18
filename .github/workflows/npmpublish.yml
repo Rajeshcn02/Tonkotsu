@@ -44,4 +44,4 @@ jobs:
           scope: 'PramodhKumarM'  #@your-github-username
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.github_npm}}  #GITHUB_TOKEN_NPM
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}  
