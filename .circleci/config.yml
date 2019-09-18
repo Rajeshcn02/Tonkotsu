@@ -32,7 +32,7 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-          filters:
-            ignore: master
       - deploy
+    filters:
+      ignore: master
 
